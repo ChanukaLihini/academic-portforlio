@@ -1,0 +1,44 @@
+.profile {
+    display: inline-flex;
+    justify-content: space-between;
+    padding-right: 10%;
+    padding-left: 20%;
+    padding-top: 5em;
+}
+
+.profile__image {
+    border: 12px solid red;
+    border-radius: 100%;
+    width: 50em;
+    overflow: hidden;
+}
+
+.profile__content {
+    font-family: 'Roboto', sans-serif;
+    color: green;
+    padding-top: 2em;
+    padding-left: 5em;
+
+    h1 {
+        letter-spacing: 4px;
+    }
+
+    h2 {
+        font-weight: 200;
+    }
+
+    p {
+        font-weight: 100;
+    }
+
+}
+
+.cv_download {
+    height: 3em;
+    font-size: large;
+    border-radius: 5em;
+    width: 8em;
+    background-color: aqua;
+    color: red;
+    border: red solid 2px;
+}

@@ -1,0 +1,24 @@
+.sub-header-line {
+    font-family: 'Roboto', sans-serif;
+    padding: 0 4em;
+}
+
+.timeline-card {
+    border: red solid 4px;
+    border-radius: 39px;
+    padding: 0.25em;
+    font-size: larger;
+    align-content: center;
+    height: fit-content;
+}
+
+.main-line{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 40em;
+}
+
+.sub-line{
+    margin-top: -0.5em;
+}

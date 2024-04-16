@@ -1,0 +1,16 @@
+.header-line {
+    font-family: 'Roboto', sans-serif;
+    max-height: 200px;
+    padding: 2em 4em;
+}
+
+.line-title {
+    border-bottom: 8px red solid;
+    display: inline;
+    position: relative
+}
+
+.sub-line {
+    margin-top: 2px;
+    border: 2px solid
+}

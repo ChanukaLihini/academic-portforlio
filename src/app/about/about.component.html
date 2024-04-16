@@ -1,0 +1,111 @@
+<div class="profile">
+  <div class="profile__image">
+    <img
+      style="height: 100%; width: 100%"
+      src="assets/images/chanuka.png"
+      alt="Chanuka Lihini"
+    />
+  </div>
+  <div class="profile__content">
+    <h1>Chanuka Lihini</h1>
+    <h2>Graduate Researcher</h2>
+    <h2>University of Moratuwa</h2>
+
+    <button class="cv_download" (click)="downloadCV()">Download CV</button>
+  </div>
+</div>
+
+<div class="profile__content">
+  <p>
+    As an experienced software developer with over 4.5 years of expertise, I
+    specialize in delivering cutting-edge engineering solutions across diverse
+    applications and technologies. My proficiency extends to full-stack
+    development, allowing me to craft interactive,
+  </p>
+</div>
+
+<div>
+  <header-line [title]="'Education'"></header-line>
+  <sub-header-line
+    [mainTitle]="'M.Sc in Mechanical Engineering'"
+    [timeLine]="'2019-2023'"
+    [subTitle]="'University of Moratuwa'"
+  ></sub-header-line>
+
+  <description-line
+    [lines]="[
+      'Thesis: Development of a soft robotic gripper with multiple grasping paterns',
+      'Advisors: Prof. R.A.R.C. Gopura, Dr. K.V.D.S. Chaturanga'
+    ]"
+  >
+  </description-line>
+</div>
+
+<div>
+  <sub-header-line
+    [mainTitle]="'B.Sc (Hons) in Mechanical Engineering'"
+    [timeLine]="'2014-2019'"
+    [subTitle]="'University of Moratuwa'"
+  ></sub-header-line>
+
+  <description-line
+    [lines]="[
+      'Capstone project title: A self-reconfigurable modular robot to help search
+  and rescue missions in colapsed buildings',
+      'Advisor: Dr. K.V.D.S. Chaturanga'
+    ]"
+  ></description-line>
+</div>
+
+<div>
+  <header-line [title]="'Experience'"></header-line>
+  <div>
+    <sub-header-line
+      [mainTitle]="'Research Assistant'"
+      [timeLine]="'2019-2023'"
+      [subTitle]="'University of Moratuwa, Sri Lanka'"
+    ></sub-header-line>
+
+    <description-line [lines]="['M.Sc. Degree by research']"></description-line>
+  </div>
+
+ <div>
+    <sub-header-line
+      [mainTitle]="'Founding Partner'"
+      [timeLine]="'2020-2024'"
+      [subTitle]="'DynamicsLK(PVT)Ltd, Sri Lanka'"
+    ></sub-header-line>
+
+    <description-line
+      [lines]="[
+        'Startup company providing mechanical engineering services Incharge of automation and control system design'
+      ]"
+    ></description-line>
+  </div>
+
+  <div>
+    <sub-header-line
+      [mainTitle]="'Visiting Lecturer'"
+      [timeLine]="'2021'"
+      [subTitle]="'AIC University, Sri Lanka'"
+    ></sub-header-line>
+
+    <description-line
+      [lines]="['Conducting lectures on Engineering Science I and I']"
+    ></description-line>
+  </div>
+
+  <div>
+    <sub-header-line
+      [mainTitle]="'Visiting Instructor'"
+      [timeLine]="'2020-2024'"
+      [subTitle]="'University of Moratuwa, Sri Lanka'"
+    ></sub-header-line>
+
+    <description-line
+      [lines]="[
+        'Conducting laboratory practicals for automation systems, biomedical enginering and manufacturing modules.'
+      ]"
+    ></description-line>
+  </div>
+</div>

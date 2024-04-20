@@ -10,5 +10,12 @@ import { RouterModule } from '@angular/router';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
+  
+  researchClicked:boolean = false;
 
+  onClickResearch():void{
+    this.researchClicked = !this.researchClicked;
+    console.log('Research');
+  }
+  
 }

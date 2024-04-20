@@ -2,33 +2,42 @@
     display: inline-flex;
     justify-content: space-between;
     padding-right: 10%;
-    padding-left: 20%;
+    padding-left: 10%;
     padding-top: 5em;
+    width: -webkit-fill-available;
 }
 
 .profile__image {
-    border: 12px solid red;
+    border: 16px solid #3a4750;
     border-radius: 100%;
-    width: 50em;
+    width: 80em;
     overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 .profile__content {
-    font-family: 'Roboto', sans-serif;
-    color: green;
+    font-family: 'Roboto Thin', sans-serif;
+    color: white;
     padding-top: 2em;
     padding-left: 5em;
+    margin-right: 5em;
+
 
     h1 {
         letter-spacing: 4px;
+        font-size: 50px;  
+
     }
 
     h2 {
-        font-weight: 200;
+        font-size: 25px;
+        /* font-weight: 50; */
     }
 
     p {
-        font-weight: 100;
+        font-size: 16px;
+        letter-spacing: 1px;
+        /* font-weight: 1; */
     }
 
 }
@@ -38,7 +47,8 @@
     font-size: large;
     border-radius: 5em;
     width: 8em;
-    background-color: aqua;
-    color: red;
-    border: red solid 2px;
+    background-color: #3a4750;
+    color: white;
+    border: #2185d5 solid 2px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }

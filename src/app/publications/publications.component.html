@@ -1,0 +1,10 @@
+<div>
+  <header-line [title]="'Publications'"></header-line>
+  
+  <div class="publication-container">
+    @for (item of publications; track $index) {
+      <publication-content [publication]="item"></publication-content>
+    }
+  </div>
+
+</div>

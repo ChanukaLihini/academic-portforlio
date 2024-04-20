@@ -1,0 +1,15 @@
+<div>
+  <h3 class="header-line">{{ publication.title }}</h3>
+  <p class="detail-line">
+    @for (author of publication.authors; track $index) {
+    <span [ngClass]="author.highlighted ? 'author-highlighted' : ''">{{
+      author.name
+    }}</span>
+    <span *ngIf="!$last">, </span>
+    }
+  </p>
+
+  <p class="detail-line">{{ publication.conference }}</p>
+  <p class="ref-line">{{ publication.ref }}</p>
+</div>
+<div class="slim-line"></div>

@@ -1,14 +1,14 @@
 <nav class="mainNav">
   <div class="mainNav__logo" [routerLink]="'/'">Chanuka Lihini</div>
   <div class="mainNav__links">
-    <a href="/about" class="mainNav__link">About</a>
+    <a href="/academic-portforlio/about" class="mainNav__link">About</a>
     <div class="dropdown">
       <button class="dropbtn" (click)="onClickResearch()">Research</button>
       <div [ngClass]="!researchClicked ? 'dropdown-hide' : 'dropdown-content'">
-        <a href="/overview">Research Overview</a>
-        <a href="/publications">Publications</a>
+        <a href="/academic-portforlio/overview">Research Overview</a>
+        <a href="/academic-portforlio/publications">Publications</a>
       </div>
     </div>
-    <a href="/contact" class="mainNav__link">Contact</a>
+    <a href="/academic-portforlio/contact" class="mainNav__link">Contact</a>
   </div>
 </nav>

@@ -8,11 +8,11 @@ import { SubHeaderLineComponent } from './shared/sub-header-line/sub-header-line
 import { PublicationsComponent } from './publications/publications.component';
 
 export const routes: Routes = [
-  { path: '', redirectTo: '', pathMatch: 'full' },
+  { path: '', redirectTo: 'academic-portforlio', pathMatch: 'full' },
   { path: '', component: HomeComponent},
-  { path: 'academic-portforlio/about', component: AboutComponent },
-  { path: 'academic-portforlio/contact', component: ContactComponent },
-  { path: 'academic-portforlio/overview', component: ResearchComponent },
-  {path:'academic-portforlio/publications', component: PublicationsComponent},
-  {path:'academic-portforlio/test2', component: ResearchComponent},
+  { path: 'about', component: AboutComponent },
+  { path: 'contact', component: ContactComponent },
+  { path: 'overview', component: ResearchComponent },
+  {path:'publications', component: PublicationsComponent},
+  {path:'test2', component: ResearchComponent},
 ];

@@ -1,21 +1,22 @@
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { saveAs } from 'file-saver';
+import { FileService } from '../services/file.service';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [HttpClientModule],
+  imports: [],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
 })
 export class HomeComponent {
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient, private fileService:FileService) {}
 
   downloadCV(): void {
     const filePath = '../../assets/images/test.pdf';
-    this.http.get(filePath, { responseType: 'blob' }).subscribe((res: Blob) => {
-      saveAs(res, 'ChanukaTennakoon_CV.pdf');
+    this.http.get(filePath, { responseType: 'blob' }).subscribe(async (res: Blob) => {
+      this.fileService.saveFile(res,'ChanukaTennakoon_CV.pdf');
     });
   }
 }

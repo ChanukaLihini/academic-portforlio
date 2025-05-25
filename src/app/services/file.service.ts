@@ -9,8 +9,8 @@ export class FileService {
 
   async saveFile(blob: Blob, fileName: string): Promise<void> {
     if (isPlatformBrowser(this.platformId)) {
-      const { saveAs } = await import('file-saver');
-      saveAs(blob, fileName);
+      // const { saveAs } = await import('file-saver');
+      // saveAs(blob, fileName);
     } else {
       console.warn('Skipping file download during SSR');
     }

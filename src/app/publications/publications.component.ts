@@ -5,11 +5,10 @@ import { HeaderLineComponent } from '../shared/header-line/header-line.component
 import { PublicationContentComponent } from '../publication-content/publication-content.component';
 
 @Component({
-  selector: 'app-publications',
-  standalone: true,
-  imports: [CommonModule, HeaderLineComponent, PublicationContentComponent],
-  templateUrl: './publications.component.html',
-  styleUrl: './publications.component.css',
+    selector: 'app-publications',
+    imports: [CommonModule, HeaderLineComponent, PublicationContentComponent],
+    templateUrl: './publications.component.html',
+    styleUrl: './publications.component.css'
 })
 export class PublicationsComponent {
   publications = [
